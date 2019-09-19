@@ -1,0 +1,112 @@
+.systemet{
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 5px;
+}
+
+.span-16{
+  grid-column: span 16;
+}
+
+.span-10{
+  grid-column: span 10;
+}
+
+.span-1{
+  grid-column: span 1;
+}
+
+.span-2{
+  grid-column: span 2;
+}
+
+.usynlig{
+  opacity: 0;
+}
+
+.grunnstoff{
+  border-style: solid;
+  border-color: #1565c0;
+  width: 50px;
+  height: 50px;
+}
+
+.grunnstoff:hover{
+  transform: scale(1.05);
+}
+
+.tall, .navn{
+  text-align: center;
+}
+
+.tall{
+  font-size: 24px;
+}
+
+.ikke-metallisk{
+  background-color: lightpink;
+}
+
+.halv-metaller{
+  background-color: lightgreen;
+}
+
+body{
+  margin: 0px; /*fjerner margen rundt hele nettsiden*/
+  font-family: helvetica; /*setter en skrifttype på hele nettsiden*/
+}
+
+nav{
+  background-color: #1565c0; /*velger en bakgrunnsfarge på navigasjonsbaren*/
+  display: flex; /*gjør den en flex box*/
+  justify-content: space-around;
+
+}
+
+nav a{ /*velger alle a-elementer som ligger i nav*/
+  color: white; /*velger skriftfarge på lenkene*/
+  text-decoration: none; /*Fjerner understrekene på lenkene*/
+  padding: 20px; /* lager 25px med luft rundt lenkene*/
+}
+
+nav .active{ /*velger klassen active inne i nav*/
+  background-color: #0d47a1; /* setter bakgrunnsfarge på elementet som er active*/
+}
+
+nav a:hover:not(.active){ /*velger a elementer som musen er over inne i nav, men ikke elementer som har klassen active*/
+  background-color: #82b1ff; /*setter bakgrunnsfarge*/
+}
+
+header{
+  margin-bottom: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+main{
+  margin-left: 15px;
+}
+
+.oversikt{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  text-align: center;
+}
+
+
+
+.mellom{
+  margin-top: 20px;
+  background-color: #fff58a;
+}
+
+.andre{
+  background-color: #e494ff;
+}
+
+.stjerne{
+  border: none;
+  background-color: white;
+}
